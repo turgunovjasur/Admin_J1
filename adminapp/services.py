@@ -25,7 +25,7 @@ def get_faculties():       # barcha fakultetlar ro'yhati
         return faculties
 
 
-def get_kafedra():
+def get_kafedra():         # barcha kafedralar ro'yhati
     with closing(connection.cursor()) as cursor:
         cursor.execute("""SELECT * from adminapp_kafedra""")
         kafedra = dictfetchall(cursor)
